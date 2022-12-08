@@ -389,43 +389,43 @@ var elForm = document.querySelector("[data-form]");
 //     return num > num2
 // }
 		//	24 sonlar o'qidagi masofa
-var a = +prompt("a ni kiriting ");
-var b = +prompt("b ni kiriting ");
-var musbat       = massive(a , 0) && massive(b , 0)
-var Katta  = massive(a , b)
-var Kichik = massive(b , 0)
-var manfiy       = massive(0 , a) && massive(0 , b)
-var aralash      = massive(0 , a) && massive(b , 0)
-var aralash1     = massive(a , 0) && massive(0 , b)
-var aAralash     = a * -1
-var aAralash1     = b * -1
-if (musbat && Katta) {
-  console.log((elh1.textContent = a-b));
-  console.log(a-b);
-}else if (musbat && Kichik){
-  console.log((elh1.textContent = b-a));
-}else if (manfiy && Katta){
-  console.log((elh1.textContent = aAralash1-aAralash));
-}else if (manfiy && Kichik){
-  console.log((elh1.textContent = aAralash-aAralash1));
-}else if (aralash){
-  console.log((elh1.textContent = aAralash+b));
-}else if (aralash1){
-  console.log((elh1.textContent = aAralash1+a));
-}else {
-  console.log((elh1.textContent = false));
-}
-function minus(num , num2 , num3) {
-    return num + num2 + num3
-}
-function massive(num , num2) {
-    return num > num2
-}	
+// var a = +prompt("a ni kiriting ");
+// var b = +prompt("b ni kiriting ");
+// var musbat       = massive(a , 0) && massive(b , 0)
+// var Katta  = massive(a , b)
+// var Kichik = massive(b , 0)
+// var manfiy       = massive(0 , a) && massive(0 , b)
+// var aralash      = massive(0 , a) && massive(b , 0)
+// var aralash1     = massive(a , 0) && massive(0 , b)
+// var aAralash     = a * -1
+// var aAralash1     = b * -1
+// if (musbat && Katta) {
+//   console.log((elh1.textContent = a-b));
+//   console.log(a-b);
+// }else if (musbat && Kichik){
+//   console.log((elh1.textContent = b-a));
+// }else if (manfiy && Katta){
+//   console.log((elh1.textContent = aAralash1-aAralash));
+// }else if (manfiy && Kichik){
+//   console.log((elh1.textContent = aAralash-aAralash1));
+// }else if (aralash){
+//   console.log((elh1.textContent = aAralash+b));
+// }else if (aralash1){
+//   console.log((elh1.textContent = aAralash1+a));
+// }else {
+//   console.log((elh1.textContent = false));
+// }
+// function minus(num , num2 , num3) {
+//     return num + num2 + num3
+// }
+// function massive(num , num2) {
+//     return num > num2
+// }	
 		//	25	sonlar o'qidagi a nuqta
 // var a = +prompt("a ni kiriting ");
-// var b = a>0
-// var d = a<0
-// var e = a * -1
+// var b = massive( a , 0)
+// var d = massive(0 , a)
+// var e = kopay(a , -1)
 // if (b) {
 //   console.log((elh1.textContent = a));
 // }else if (d){
@@ -433,6 +433,12 @@ function massive(num , num2) {
 // }else{
 //   console.log((elh1.textContent = false));
 // }	
+// function kopay(a , b) {
+//     return a * b
+// }
+// function massive(a , b) {
+//     return a > b
+// }
     // 26 katta yoki kichik alfavit 
 // var a = prompt("a ni kiriting ");
 // if (a === a.toUpperCase()) {
@@ -445,11 +451,11 @@ function massive(num , num2) {
 // var b =  prompt("Familiyangizni kiriting  kiriting ");     
 // var e = alert("maksimal ball 100 ball")
 // var c =  +prompt("ballingizni kiriting  kiriting "); 
+// var d =  prompt("tankangiz bormi bor bo'lsa ha deb yozing bo'lmasa yo'q"); 
 // if(c>100){
 //     console.log(`xurmatli ${a} ${b} siz mashenniksiz mashenniklik o'tmaydi`)
 //     elh1.textContent =`xurmatli ${a} ${b} siz mashenniksiz mashenniklik o'tmaydi`
 // }else if (c<=70 ){
-//     var d =  prompt("tankangiz bormi bor bo'lsa ha deb yozing bo'lmasa yo'q"); 
 // }else if (c<=70 && d=="ha"){
 //     console.log(`xurmatli ${a} ${b} siz mashenniksiz mashenniklik o'tmaydi`)
 //     elh1.textContent =`xurmatli ${a} ${b} siz mashenniksiz mashenniklik o'tmaydi`
@@ -467,14 +473,52 @@ function massive(num , num2) {
 		// 28 converter money
 // var dollar = 11200
 // var rubl = 189
-// var euro = 11500
+// var euro = 11800
 // elForm.addEventListener("submit" , function(evt){
 //     evt.preventDefault()
 //     if(elSelect.value === "usd"){
-//         elh1.textContent = `sizda taqriban ${Math.round(elInput.value / dollar)} dollar bor`
+//         elh1.textContent = `sizda taqriban ${(elInput.value / dollar).toFixed(2)} dollar bor`
 //     }else if(elSelect.value === "rubl"){
-//         elh1.textContent = `sizda taqriban ${Math.round(elInput.value / rubl  )} rubl bor`
+//         elh1.textContent = `sizda taqriban ${(elInput.value / rubl  ).toFixed(2)} rubl bor`
 //     }else if(elSelect.value === "euro"){
-//         elh1.textContent = `sizda taqriban ${Math.round(elInput.value / euro  )} euro bor`
+//         elh1.textContent = `sizda taqriban ${(elInput.value / euro  ).toFixed(2)} euro bor`
 //     }
 // })
+		//	29 kim birinchi boradi
+// var piyoda = 3.6
+// var velosiped = 20.1
+// var mashina = 70
+// var samolyot = 800
+// elForm.addEventListener("submit" , function(evt){
+//     evt.preventDefault()
+//     if(elSelect.value === "piyoda"){
+//         elh1.textContent = `siz piyoda bo'lsangiz taqriban ${(elInput.value / piyoda).toFixed(2)} soatda borasiz`
+//     }else if(elSelect.value === "velosiped"){
+//         elh1.textContent = `siz velosipedda bo'lsangiz taqriban ${(elInput.value / velosiped  ).toFixed(2)} soatda borasiz`
+//     }else if(elSelect.value === "mashina"){
+// 			elh1.textContent = `siz mashinada bo'lsangiz taqriban ${(elInput.value / mashina  ).toFixed(2)} soatda borasiz`
+// 	  }else if(elSelect.value === "samolyot"){
+// 		elh1.textContent = `siz samolyotda bo'lsangiz taqriban ${(elInput.value / samolyot  ).toFixed(2)} soatda borasiz`
+// 		}
+// })		
+        //  30 Fizbuz
+var four = 4
+var three = 3
+var qoldiq = 0
+elForm.addEventListener("submit" , function(evt){
+    evt.preventDefault()
+    if(fiz(elInput.value , 3)==qoldiq && fiz(elInput.value , 4)==qoldiq){
+        elh1.textContent = ` bu ${elInput.value} soni 3 va 4 ga bo'linadi`
+    }
+    else if(fiz(elInput.value , 3)==qoldiq){
+        elh1.textContent = ` bu ${elInput.value} soni 3 ga bo'linadi`
+    } else if(fiz(elInput.value , 4)==qoldiq){
+        elh1.textContent = ` bu ${elInput.value} soni 4 ga bo'linadi`
+    }
+    else {
+        elh1.textContent = ` bu ${elInput.value} soni 3ga ham 4 ga ham  bo'linmaydi`  
+    }
+})	
+function fiz (a , b){
+    return a % b 
+}
