@@ -485,22 +485,22 @@ var elForm = document.querySelector("[data-form]");
 //     }
 // })
 		//	29 kim birinchi boradi
-var piyoda = 3.6
-var velosiped = 20.1
-var mashina = 70
-var samolyot = 800
-elForm.addEventListener("submit" , function(evt){
-    evt.preventDefault()
-    if(elSelect.value === "piyoda"){
-        elh1.textContent = `siz piyoda bo'lsangiz taqriban ${(elInput.value / piyoda).toFixed(2)} soatda borasiz`
-    }else if(elSelect.value === "velosiped"){
-        elh1.textContent = `siz velosipedda bo'lsangiz taqriban ${(elInput.value / velosiped  ).toFixed(2)} soatda borasiz`
-    }else if(elSelect.value === "mashina"){
-			elh1.textContent = `siz mashinada bo'lsangiz taqriban ${(elInput.value / mashina  ).toFixed(2)} soatda borasiz`
-	  }else if(elSelect.value === "samolyot"){
-		elh1.textContent = `siz samolyotda bo'lsangiz taqriban ${(elInput.value / samolyot  ).toFixed(2)} soatda borasiz`
-		}
-})		
+// var piyoda = 3.6
+// var velosiped = 20.1
+// var mashina = 70
+// var samolyot = 800
+// elForm.addEventListener("submit" , function(evt){
+//     evt.preventDefault()
+//     if(elSelect.value === "piyoda"){
+//         elh1.textContent = `siz piyoda bo'lsangiz taqriban ${(elInput.value / piyoda).toFixed(2)} soatda borasiz`
+//     }else if(elSelect.value === "velosiped"){
+//         elh1.textContent = `siz velosipedda bo'lsangiz taqriban ${(elInput.value / velosiped  ).toFixed(2)} soatda borasiz`
+//     }else if(elSelect.value === "mashina"){
+// 			elh1.textContent = `siz mashinada bo'lsangiz taqriban ${(elInput.value / mashina  ).toFixed(2)} soatda borasiz`
+// 	  }else if(elSelect.value === "samolyot"){
+// 		elh1.textContent = `siz samolyotda bo'lsangiz taqriban ${(elInput.value / samolyot  ).toFixed(2)} soatda borasiz`
+// 		}
+// })		
         //  30 Fizbuz
 // var four = 4
 // var three = 3
@@ -522,3 +522,10 @@ elForm.addEventListener("submit" , function(evt){
 // function fiz (a , b){
 //     return a % b 
 // }
+        //  31 
+var a = +prompt("son")
+function cut(c){
+    return ` butun ${Math.trunc(c)} qoldiq ${(c - Math.trunc(c)).toFixed(2)}`
+}  
+
+console.log(cut(a))
