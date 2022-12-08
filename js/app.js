@@ -485,40 +485,40 @@ var elForm = document.querySelector("[data-form]");
 //     }
 // })
 		//	29 kim birinchi boradi
-// var piyoda = 3.6
-// var velosiped = 20.1
-// var mashina = 70
-// var samolyot = 800
-// elForm.addEventListener("submit" , function(evt){
-//     evt.preventDefault()
-//     if(elSelect.value === "piyoda"){
-//         elh1.textContent = `siz piyoda bo'lsangiz taqriban ${(elInput.value / piyoda).toFixed(2)} soatda borasiz`
-//     }else if(elSelect.value === "velosiped"){
-//         elh1.textContent = `siz velosipedda bo'lsangiz taqriban ${(elInput.value / velosiped  ).toFixed(2)} soatda borasiz`
-//     }else if(elSelect.value === "mashina"){
-// 			elh1.textContent = `siz mashinada bo'lsangiz taqriban ${(elInput.value / mashina  ).toFixed(2)} soatda borasiz`
-// 	  }else if(elSelect.value === "samolyot"){
-// 		elh1.textContent = `siz samolyotda bo'lsangiz taqriban ${(elInput.value / samolyot  ).toFixed(2)} soatda borasiz`
-// 		}
-// })		
-        //  30 Fizbuz
-var four = 4
-var three = 3
-var qoldiq = 0
+var piyoda = 3.6
+var velosiped = 20.1
+var mashina = 70
+var samolyot = 800
 elForm.addEventListener("submit" , function(evt){
     evt.preventDefault()
-    if(fiz(elInput.value , 3)==qoldiq && fiz(elInput.value , 4)==qoldiq){
-        elh1.textContent = ` bu ${elInput.value} soni 3 va 4 ga bo'linadi`
-    }
-    else if(fiz(elInput.value , 3)==qoldiq){
-        elh1.textContent = ` bu ${elInput.value} soni 3 ga bo'linadi`
-    } else if(fiz(elInput.value , 4)==qoldiq){
-        elh1.textContent = ` bu ${elInput.value} soni 4 ga bo'linadi`
-    }
-    else {
-        elh1.textContent = ` bu ${elInput.value} soni 3ga ham 4 ga ham  bo'linmaydi`  
-    }
-})	
-function fiz (a , b){
-    return a % b 
-}
+    if(elSelect.value === "piyoda"){
+        elh1.textContent = `siz piyoda bo'lsangiz taqriban ${(elInput.value / piyoda).toFixed(2)} soatda borasiz`
+    }else if(elSelect.value === "velosiped"){
+        elh1.textContent = `siz velosipedda bo'lsangiz taqriban ${(elInput.value / velosiped  ).toFixed(2)} soatda borasiz`
+    }else if(elSelect.value === "mashina"){
+			elh1.textContent = `siz mashinada bo'lsangiz taqriban ${(elInput.value / mashina  ).toFixed(2)} soatda borasiz`
+	  }else if(elSelect.value === "samolyot"){
+		elh1.textContent = `siz samolyotda bo'lsangiz taqriban ${(elInput.value / samolyot  ).toFixed(2)} soatda borasiz`
+		}
+})		
+        //  30 Fizbuz
+// var four = 4
+// var three = 3
+// var qoldiq = 0
+// elForm.addEventListener("submit" , function(evt){
+//     evt.preventDefault()
+//     if(fiz(elInput.value , 3)==qoldiq && fiz(elInput.value , 4)==qoldiq){
+//         elh1.textContent = ` bu ${elInput.value} soni 3 va 4 ga bo'linadi`
+//     }
+//     else if(fiz(elInput.value , 3)==qoldiq){
+//         elh1.textContent = ` bu ${elInput.value} soni 3 ga bo'linadi`
+//     } else if(fiz(elInput.value , 4)==qoldiq){
+//         elh1.textContent = ` bu ${elInput.value} soni 4 ga bo'linadi`
+//     }
+//     else {
+//         elh1.textContent = ` bu ${elInput.value} soni 3ga ham 4 ga ham  bo'linmaydi`  
+//     }
+// })	
+// function fiz (a , b){
+//     return a % b 
+// }
